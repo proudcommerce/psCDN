@@ -187,11 +187,13 @@
      */
     $this->blUseCron = false;
 
-	// psCDN | start
-    if (!isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] != '1' || strtolower($_SERVER['HTTPS']) != 'on')) {
-        $this->sShopURLPsSrc   = 'http://js.yourdomain.com';					// oxstyle
-        $this->sShopURLPsCss   = 'http://css.yourdomain.com';					// oxscript
-        $this->sShopURLPsImg   = 'http://img.yourdomain.com';					// getImageUrl()
-        $this->sAltImageDir    = "http://pics.yourdomain.com/out/pictures";		// article pics
+    // psCDN | start
+    // all domains should point on the same as your shop url
+    if (!isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] != '1' || strtolower($_SERVER['HTTPS']) != 'on'))
+    {
+        $this->sShopURLPsSrc   = 'http://js.yourdomain.com';                // oxstyle
+        $this->sShopURLPsCss   = 'http://css.yourdomain.com';               // oxscript
+        $this->sShopURLPsImg   = 'http://img.yourdomain.com';               // getImageUrl()
+        $this->sAltImageDir    = "http://pics.yourdomain.com/out/pictures"; // article pics
     }
     // psCDN | end

@@ -7,8 +7,9 @@ Free Module for OXID eShop.
 
 Features
 
-	- configure different urls for CSS/IMG/JS files in config.inc.php
-	  (info: https://developers.google.com/speed/docs/best-practices/request?hl=de-DE#ServeFromCookielessDomain, https://developers.google.com/speed/docs/best-practices/rtt?hl=de-DE#ParallelizeDownloads)
+	- configure different URLs/domains in config.inc.php
+	  (https://developers.google.com/speed/docs/best-practices/request?hl=de-DE#ServeFromCookielessDomain)
+	  (https://developers.google.com/speed/docs/best-practices/rtt?hl=de-DE#ParallelizeDownloads)
 
 
 Installation
