@@ -62,6 +62,7 @@ function smarty_function_oxstyle($params, &$smarty)
             $sStyle = $aStyle[0] = $myConfig->getResourceUrl($aStyle[0], $myConfig->isAdmin());
 
             // psCDN | start
+            // note: changes in core-files is normally not the right way, but in this case the best ;-)
             $sShopCssURL = $myConfig->getConfigParam( 'sShopURLPsCss' );
             $sShopURL = $myConfig->getConfigParam( 'sShopURL' );
             if(!empty($sShopCssURL)) {

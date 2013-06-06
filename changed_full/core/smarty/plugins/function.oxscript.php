@@ -71,6 +71,7 @@ function smarty_function_oxscript($params, &$smarty)
             $sScript = $myConfig->getResourceUrl($aScript[0], $myConfig->isAdmin());
 
             // psCDN | start
+            // note: changes in core-files is normally not the right way, but in this case the best ;-)
             $sShopSrcURL = $myConfig->getConfigParam( 'sShopURLPsSrc' );
             $sShopURL = $myConfig->getConfigParam( 'sShopURL' );
             if(!empty($sShopSrcURL)) {
